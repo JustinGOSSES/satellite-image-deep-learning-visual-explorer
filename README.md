@@ -1,6 +1,8 @@
-# awsome-list-visual-explorer-template
+# satellite-image-deep-learning-visual-explorer
 
-This is a repo/page built from a template + scripts as described below. 
+
+
+This is a repo/page built from a template + scripts as described below. The template can be found at [awesome-list-visual-explorer-template](https://github.com/JustinGOSSES/awesome-list-visual-explorer-template)
 
 It was pointed at https://github.com/robmarkcole/satellite-image-deep-learning/blob/master/README.md
 
