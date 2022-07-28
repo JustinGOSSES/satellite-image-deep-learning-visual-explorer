@@ -1,5 +1,6 @@
 function draw_force_graph(areaID, adjacentAreaID) {
     // URL for data
+    ///// IT APPEARS FOR SOME REASON THERE ARE DEPENDENCIES IN THE FIRST FILE NOT IN SECOND!!! THIS CAUSES BUGS
     var url1 = ghDataDir + '/intRepos_Dependencies.json';
     var url2 = ghDataDir + '/dependencyInfo.json';
     var files = [url1, url2];
@@ -1011,7 +1012,8 @@ function draw_force_graph(areaID, adjacentAreaID) {
                         continue;
                     }
                     if (!nodes.some(d => d.id == node['repository']['nameWithOwner'])) {
-                        nodes.push({ name: node['repository']['nameWithOwner'].split('/')[0], id: node['repository']['nameWithOwner'], package: true, notPackage: false, verified: obj2['data'][node['repository']['nameWithOwner']]['owner']['isVerified'], language: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['name'] : null, color: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['color'] : null });
+                        console.log("node on line 1014",node)
+                        nodes.push({ name: node['repository']['nameWithOwner'].split('/')[0], id: node['repository']['nameWithOwner'], package: true, notPackage: false, verified: false, language: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['name'] : null, color: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['color'] : null });
                     } else {
                         nodes[nodes.findIndex(d => d.id == node['repository']['nameWithOwner'])].package = true;
                     }
