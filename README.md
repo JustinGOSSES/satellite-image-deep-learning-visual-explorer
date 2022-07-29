@@ -6,6 +6,7 @@ It was pointed at https://github.com/robmarkcole/satellite-image-deep-learning/b
 
 This is an experiment! There currently is no intention to keep it up-to-date with the source repository. There have been some tries to do that via GitHub Actions in recent past, but that feature set is not yet stable as of 2022-07.  
 
+THE PAGE IS LIVE AT: https://justingosses.github.io/satellite-image-deep-learning-visual-explorer/
 ----------------------
 `The awsome-list-visual-explorer-template is a repository designed to be used as a template repository. If the name of the code repository is not `<b>awsome-list-visual-explorer-template</b>` you are looking at a code repository made with the template.` 
 
