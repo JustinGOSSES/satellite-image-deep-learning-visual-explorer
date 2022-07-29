@@ -26,3 +26,5 @@ The README for this repository, which may or may not be the template, is: <a hre
 
 #### Acknowledgements
 This project started with <a href="https://software.llnl.gov/">Lawerence Livermore National Laboratory's Software Portal</a> and hacked it into something more reusable as a template that could be rebuilt a script that found where to look by scrapping a markdown file for GitHub links. Greatful for all their work that I can build a tiny bit on in a slightly different direction!
+
+All the data is sourced via the GitHub API based on repositories found programmatically on `Cole, R. M. satellite-image-deep-learning. https://github.com/robmarkcole/satellite-image-deep-learning`
