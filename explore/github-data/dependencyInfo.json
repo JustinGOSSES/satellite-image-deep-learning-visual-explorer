@@ -1,5 +1,20 @@
 {
     "data": {
+        "GeoTIFF/geoblaze": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "typescript"
+                    }
+                ]
+            },
+            "name": "typescript",
+            "nameWithOwner": "microsoft/TypeScript",
+            "owner": {
+                "login": "Microsoft"
+            }
+        },
         "0xflotus/dvc": {
             "languages": {
                 "nodes": [

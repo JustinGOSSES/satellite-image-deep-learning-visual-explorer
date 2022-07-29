@@ -1,53 +1,45 @@
 {
     "data": {
-        "Awesome": {
-            "title": "Awesome",
+        "Remote-Sensing": {
+            "title": "remote-sensing",
             "icon": {
                 "path": "/satellite-image-deep-learning-visual-explorer/assets/images/performance.svg",
-                "alt": "having to do with the Awesome Lists"
+                "alt": "having to do with remote-sensing"
             },
             "description" : {
-                "short": "Repos having to do with the Awesome Lists",
+                "short": "Repos having tag of remote-sensing",
                 "long": ""
             },
             "topics": [
-                "Awesome",
-                "Awesome-list",
-                "Awesome-Lists"
+                "remote-sensing"
             ]
         },
-        "DATA MANAGEMENT & VIZ": {
-            "title": "DATA MANAGEMENT",
+        "XARRAY": {
+            "title": "XARRAY",
             "icon": {
                 "path": "/satellite-image-deep-learning-visual-explorer/assets/images/data-manage.svg",
-                "alt": "Data Management"
+                "alt": "Dxarray"
             },
             "description": {
-                "short": "Data and data management repositories",
+                "short": "repos having the xarray tag",
                 "long": ""
             },
             "topics": [
-                "data-management"
+                "xarray"
             ]
         },
-        "WEB SITES & APPLICATIONS": {
-            "title": "WEB SITES & APPLICATIONS",
+        "raster": {
+            "title": "raster",
             "icon": {
                 "path": "/satellite-image-deep-learning-visual-explorer/assets/images/application.svg",
-                "alt": "WEB SITES & APPLICATIONS"
+                "alt": "raster"
             },
             "description": {
-                "short": "Repositories that are WEB SITES & APPLICATIONS",
+                "short": "Repositories with raster topic tag",
                 "long": ""
             },
             "topics": [
-                "application",
-                "applications",
-                "website",
-                "websites",
-                "web",
-                "server",
-                "front-end"
+                "raster"
             ]
         },
         "Visualization": {
@@ -69,32 +61,28 @@
                 "holoviz"
             ]
         },
-        "SYSTEM SOFTWARE": {
-            "title": "SYSTEM SOFTWARE",
+        "satellite": {
+            "title": "SATELLITE",
             "icon": {
                 "path": "/satellite-image-deep-learning-visual-explorer/assets/images/system-software.svg",
-                "alt": "Systems Software"
+                "alt": "satellite"
             },
             "description": {
-                "short": "Manage laptop and desktop computer systems, HPC clusters, and parallel environments",
+                "short": "Repositories with satellite topic tag",
                 "long": ""
             },
             "topics": [
-                "system-software",
-                "system",
-                "backend",
-                "server",
-                "serve"
+                "satellite"
             ]
         },
         "DATA": {
-            "title": "DATA MINING",
+            "title": "DATA",
             "icon": {
                 "path": "/satellite-image-deep-learning-visual-explorer/assets/images/file-systems.svg",
                 "alt": "File Systems"
             },
             "description": {
-                "short": "Repos tagged with the dataset related topic tag.",
+                "short": "Repos tagged with the dataset, data, data-mining, datasets, catalog, and model topic tags.",
                 "long": ""
             },
             "topics": [
@@ -104,6 +92,35 @@
                 "catalogs",
                 "dataset",
                 "model"
+            ]
+        },
+        "STAC": {
+            "title": "STAC",
+            "icon": {
+                "path": "/satellite-image-deep-learning-visual-explorer/assets/images/file-systems.svg",
+                "alt": "File Systems"
+            },
+            "description": {
+                "short": "Repos tagged with STAC topic tag.",
+                "long": ""
+            },
+            "topics": [
+                "STAC",
+                "stac"
+            ]
+        },
+        "LANDSAT": {
+            "title": "LANDSAT",
+            "icon": {
+                "path": "/satellite-image-deep-learning-visual-explorer/assets/images/file-systems.svg",
+                "alt": "File Systems"
+            },
+            "description": {
+                "short": "Repos tagged with landsat topic tag.",
+                "long": ""
+            },
+            "topics": [
+                "landsat"
             ]
         }
     }

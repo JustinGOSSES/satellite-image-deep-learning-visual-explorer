@@ -11,7 +11,7 @@ function draw_force_graph(areaID, adjacentAreaID) {
     function drawGraph(data, areaID, adjacentAreaID) {
         // <!-- replaced -->
         // const graphHeader = 'LLNL Dependencies';
-        const graphHeader = 'SWUNG Dependencies';
+        const graphHeader = 'Core Org Dependencies';
 
         const margin = { top: stdMargin.top, right: stdMargin.right / 2, bottom: stdMargin.bottom / 2, left: stdMargin.left / 2 },
             width = stdTotalWidth * 2 + 80 - margin.left - margin.right,
@@ -63,7 +63,7 @@ function draw_force_graph(areaID, adjacentAreaID) {
 
         // Adds static, directional, and link forces to nodes
         const simulation = d3.forceSimulation(nodes)
-            .force('link', d3.forceLink(links).id(d => d.id).distance(d => 10))
+            .force('link', d3.forceLink(links).id(d => d.id).distance(d => 1))
             .force('charge', d3.forceManyBody().strength(() => -20))
             .force('x', d3.forceX().strength(() => 0.14))
             .force('y', d3.forceY().strength(() => 0.14));
@@ -282,8 +282,8 @@ function draw_force_graph(areaID, adjacentAreaID) {
         //<!-- replaced -->
         // options.orgView = { name: 'orgView', text: 'Organizations connected to dependency organizations', labels: ['Organizations', 'External Package Organizations', 'LLNL Package Organizations'], languages: false, function: organize };
         // options.simplifiedOrgView = { name: 'simplifiedOrgView', text: 'Organizations connected by shared dependencies', labels: ['Organizations', 'External Package Organizations', 'LLNL Package Organizations'], languages: false, function: simplifyOrganize };
-        options.orgView = { name: 'orgView', text: 'Organizations connected to dependency organizations', labels: ['Organizations', 'External Package Organizations', 'SWUNG Package Organizations'], languages: false, function: organize };
-        options.simplifiedOrgView = { name: 'simplifiedOrgView', text: 'Organizations connected by shared dependencies', labels: ['Organizations', 'External Package Organizations', 'SWUNG Package Organizations'], languages: false, function: simplifyOrganize };
+        options.orgView = { name: 'orgView', text: 'Organizations connected to dependency organizations', labels: ['Organizations', 'External Package Organizations', 'Core Org Package Organizations'], languages: false, function: organize };
+        options.simplifiedOrgView = { name: 'simplifiedOrgView', text: 'Organizations connected by shared dependencies', labels: ['Organizations', 'External Package Organizations', 'Core Org Package Organizations'], languages: false, function: simplifyOrganize };
         
         const optionsArray = Object.values(options);
 
@@ -1013,7 +1013,7 @@ function draw_force_graph(areaID, adjacentAreaID) {
                     }
                     if (!nodes.some(d => d.id == node['repository']['nameWithOwner'])) {
                         console.log("node on line 1014",node)
-                        nodes.push({ name: node['repository']['nameWithOwner'].split('/')[0], id: node['repository']['nameWithOwner'], package: true, notPackage: false, verified: false, language: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['name'] : null, color: obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['color'] : null });
+                        nodes.push({ name: node['repository']['nameWithOwner'].split('/')[0], id: node['repository']['nameWithOwner'], package: true, notPackage: false, verified: false, language: obj2['data'][node['repository']['nameWithOwner']]?.['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]?.['languages']['nodes'][0]['name'] : null, color: obj2['data'][node['repository']['nameWithOwner']]?.['languages']['nodes'][0] ? obj2['data'][node['repository']['nameWithOwner']]['languages']['nodes'][0]['color'] : null });
                     } else {
                         nodes[nodes.findIndex(d => d.id == node['repository']['nameWithOwner'])].package = true;
                     }
