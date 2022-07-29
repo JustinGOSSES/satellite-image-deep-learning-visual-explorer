@@ -2,7 +2,7 @@
 
 This is a repo/page built from a template + scripts as described below. The template can be found at [awesome-list-visual-explorer-template](https://github.com/JustinGOSSES/awesome-list-visual-explorer-template)
 
-It was pointed at https://github.com/robmarkcole/satellite-image-deep-learning/blob/master/README.md which is where it found all the GitHub repositories to gather data about that is visualized in the pages. 
+It was pointed at `Cole, R. M. satellite-image-deep-learning. https://github.com/robmarkcole/satellite-image-deep-learning` which is where it found all the GitHub repositories to gather data about that is visualized in the pages. 
 
 This is an experiment! There currently is no intention to keep it up-to-date with the source repository. There have been some tries to do that via GitHub Actions in recent past, but that feature set is not yet stable as of 2022-07.  
 
