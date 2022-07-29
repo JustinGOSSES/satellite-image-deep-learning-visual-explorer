@@ -8,6 +8,10 @@ This is an experiment! There currently is no intention to keep it up-to-date wit
 
 THE PAGE IS LIVE AT: https://justingosses.github.io/satellite-image-deep-learning-visual-explorer/
 ----------------------
+----------------------
+----------------------
+Template README Below
+----------------------
 `The awsome-list-visual-explorer-template is a repository designed to be used as a template repository. If the name of the code repository is not `<b>awsome-list-visual-explorer-template</b>` you are looking at a code repository made with the template.` 
 
 This repository includes a config file, `_config.yml` that users can edit to point at an <a href="https://github.com/topics/awesome-list">Awesome List</a>, a GitHub org, or any other group of GitHub repositories. The user can then run a few pre-built scripts that harvest GitHub metadata about each repository, transform that metadata into visualizations, and generate a website with those interactive visualizations that is deployed as a GitHub pages page. 
